@@ -1,0 +1,27 @@
+@model FinansApp.OneSignal.CreateNotificationModel;
+@{ ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<h1>Index</h1>
+<form asp-action="CreateNotification" asp-controller="Notifications" method="post">
+
+    <div class="form-wrap">
+        <input asp-for="Title" class="form-input" />
+        <label class="form-label">Başlık</label>
+
+
+    </div>
+    <div class="form-wrap">
+        <input asp-for="Content" class="form-input" />
+        <label class="form-label">içerik</label>
+
+
+    </div>
+
+
+
+    <input class="btn btn-success" type="submit" value="Bildirim At" />
+</form>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

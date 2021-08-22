@@ -1,0 +1,13 @@
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Data/bin/Debug/netcoreapp3.1/FinansApp.Data.deps.json
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Data/bin/Debug/netcoreapp3.1/FinansApp.Data.runtimeconfig.json
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Data/bin/Debug/netcoreapp3.1/FinansApp.Data.runtimeconfig.dev.json
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Data/bin/Debug/netcoreapp3.1/FinansApp.Data.dll
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Data/bin/Debug/netcoreapp3.1/FinansApp.Data.pdb
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Data/obj/Debug/netcoreapp3.1/FinansApp.Data.csproj.AssemblyReference.cache
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Data/obj/Debug/netcoreapp3.1/FinansApp.Data.AssemblyInfoInputs.cache
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Data/obj/Debug/netcoreapp3.1/FinansApp.Data.AssemblyInfo.cs
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Data/obj/Debug/netcoreapp3.1/FinansApp.Data.csproj.CoreCompileInputs.cache
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Data/obj/Debug/netcoreapp3.1/FinansApp.Data.dll
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Data/obj/Debug/netcoreapp3.1/FinansApp.Data.pdb
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Data/obj/Debug/netcoreapp3.1/FinansApp.Data.genruntimeconfig.cache
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Data/obj/Debug/netcoreapp3.1/FinansApp.Data.GeneratedMSBuildEditorConfig.editorconfig

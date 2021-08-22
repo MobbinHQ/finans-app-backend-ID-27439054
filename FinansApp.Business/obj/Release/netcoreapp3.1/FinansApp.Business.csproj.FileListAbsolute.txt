@@ -1,0 +1,13 @@
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Business/bin/Release/netcoreapp3.1/FinansApp.Business.deps.json
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Business/bin/Release/netcoreapp3.1/FinansApp.Business.dll
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Business/bin/Release/netcoreapp3.1/FinansApp.Business.pdb
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Business/bin/Release/netcoreapp3.1/FinansApp.Data.dll
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Business/bin/Release/netcoreapp3.1/FinansApp.Data.pdb
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Business/obj/Release/netcoreapp3.1/FinansApp.Business.csproj.AssemblyReference.cache
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Business/obj/Release/netcoreapp3.1/FinansApp.Business.AssemblyInfoInputs.cache
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Business/obj/Release/netcoreapp3.1/FinansApp.Business.AssemblyInfo.cs
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Business/obj/Release/netcoreapp3.1/FinansApp.Business.csproj.CoreCompileInputs.cache
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Business/obj/Release/netcoreapp3.1/FinansApp.Business.csproj.CopyComplete
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Business/obj/Release/netcoreapp3.1/FinansApp.Business.dll
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Business/obj/Release/netcoreapp3.1/FinansApp.Business.pdb
+/Users/ridvangokcan/Documents/GitHub/FinansApp/FinansApp.Business/obj/Release/netcoreapp3.1/FinansApp.Business.GeneratedMSBuildEditorConfig.editorconfig

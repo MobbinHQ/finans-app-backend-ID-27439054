@@ -1,0 +1,54 @@
+﻿@model FinansApp.Business.StaticPages.Dto.StaticPageAddOrEditDto;
+@{
+    ViewData["Title"] = "AddOrEdit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Styles{
+    <link href="~/lib/summernote/summernote.min.css" rel="stylesheet" />
+}
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                @if (Model.Id == 0)
+                {
+                    <h1 class="m-0 text-dark">Statik Sayfa Ekle</h1>
+                }
+                else
+                {
+                    <h1 class="m-0 text-dark">Statik Sayfa Düzenle : @Model.Name</h1>
+                }
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/statik-sayfalar">Listeye Dön</a></li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+    <div class="container">
+        <div class="card">
+            <div class="card-body card-primary">
+                <form role="form" id="AddOrEditForm">
+                    <input type="hidden" name="Id" value="@Model.Id" />
+                    <div class="row form-group mb-3 col-md-5">
+                        <label>Sayfa Adı</label>
+                        <input type="text" name="Name" id="Name" class="form-control" value="@Model.Name" />
+                    </div>
+                    <div class="row form-group mb-3">
+                        <textarea id="summernote" name="Text">@Html.Raw(Model.Text) </textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="addPage()" class="btn btn-primary">Kaydet</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts{
+    <script src="~/lib/summernote/summernote.min.js"></script>
+    <script src="~/view-resources/StaticPages/AddOrEdit.min.js"></script>
+}

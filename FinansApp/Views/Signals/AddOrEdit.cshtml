@@ -1,0 +1,92 @@
+﻿@model FinansApp.Business.Signals.Dto.SignalAddOrEditDto;
+@{
+    ViewData["Title"] = "AddOrEdit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                @if (Model.Id == 0)
+                {
+                    <h1 class="m-0 text-dark">Sinyyal Ekle</h1>
+                }
+                else
+                {
+                    <h1 class="m-0 text-dark">@Model.BuySell</h1>
+                }
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/sinyaller">Listeye Dön</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content">
+    <div class="container">
+        <div class="card">
+            <div class="card-body card-primary">
+                <form role="form" id="AddOrEditForm">
+                    <input type="hidden" name="Id" value="@Model.Id" />
+                    <div class="row mb-3">
+                        <div class="form-group mb-3 col-md-8">
+                            <label>Tip</label>
+                            <select class="form-control" name="Type" id="Type">
+                                <option>Seçiniz..</option>
+                                @if (Model.Type == 1)
+                                {
+                                    <option selected value="1">ALIŞ</option>
+                                }
+                                else
+                                {
+                                    <option value="1">ALIŞ</option>
+                                }
+                                @if (Model.Type == 2)
+                                {
+                                    <option selected value="2">SATIŞ</option>
+                                }
+                                else
+                                {
+                                    <option value="2">SATIŞ</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="form-group mb-3 col-md-8">
+                            <label>Alış / Satış</label>
+                            <input type="text" name="BuySell" id="BuySell" class="form-control" value="@Model.BuySell" placeholder="Ör : EURTRY">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="form-group mb-3 col-md-4">
+                            <label>Giriş</label>
+                            <input type="text" name="Entry" id="Entry" class="form-control" value="@Model.Entry" placeholder="Giriş">
+                        </div>
+                        <div class="form-group mb-3 col-md-4">
+                            <label>TP</label>
+                            <input type="text" name="TP" id="TP" class="form-control" value="@Model.TP" placeholder="TP">
+                        </div>
+                        <div class="form-group mb-3 col-md-4">
+                            <label>SL</label>
+                            <input type="text" name="SL" id="SL" class="form-control" value="@Model.SL" placeholder="SL">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group mb-3 col-10">
+                        </div>
+                        <div class="col-2">
+                            <input type="button" onclick="addSignal();" class="btn btn-primary btn-block" value="Kaydet">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/view-resources/Signals/AddOrEdit.min.js"></script>
+}

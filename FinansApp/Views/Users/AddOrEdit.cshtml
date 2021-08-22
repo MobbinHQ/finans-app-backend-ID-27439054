@@ -1,0 +1,114 @@
+﻿@model FinansApp.Business.Users.Dto.UserAddOrEditDto;
+@{
+    ViewData["Title"] = "AddOrEdit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                @if (Model.Id == 0)
+                {
+                    <h1 class="m-0 text-dark">Kullanıcı Ekle</h1>
+                }
+                else
+                {
+                    <h1 class="m-0 text-dark">@Model.Name @Model.Surname</h1>
+                }
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/kullanicilar">Listeye Dön</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content">
+    <div class="container">
+        <div class="card">
+            <div class="card-body card-primary">
+                <form role="form" id="AddOrEditForm">
+                    <input type="hidden" name="Id" value="@Model.Id" />
+                    <div class="row mb-3">
+                        <div class="form-group col-md-3">
+                            @if (Model.IsActive == true)
+                            {
+                                <input type="checkbox" id="isActive" name="IsActive" checked="checked" value="true" />
+                                <label for="isActive" class="accent-blue">Aktif mi?</label>
+                            }
+                            else
+                            {
+                                <input type="checkbox" id="isActive" name="IsActive" value="true" />
+                                <label for="isActive" class="accent-blue">Aktif mi?</label>
+                            }
+                        </div>
+
+                    </div>
+                    <div class="row mb-3">
+                        <div class="form-group col-md-4">
+                            <label>Kullanıcı Tipi</label>
+                            <select name="UserType" class="form-control">
+                                @if (Model.UserType == 1)
+                                {
+                                    <option value="1" selected>Admin</option>
+                                }
+                                else
+                                {
+                                    <option value="1">Admin</option>
+                                }
+                                @if (Model.UserType == 2)
+                                {
+                                    <option value="2" selected>Standart</option>
+                                }
+                                else
+                                {
+                                    <option value="2">Standart</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="form-group mb-3 col-md-4">
+                            <label>Adı</label>
+                            <input type="text" name="Name" id="Name" class="form-control" value="@Model.Name" placeholder="Adı">
+                        </div>
+                        <div class="form-group mb-3 col-md-4">
+                            <label>Soyadı</label>
+                            <input type="text" name="Surname" id="Surname" class="form-control" value="@Model.Surname" placeholder="Soyadı">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="form-group mb-3 col-md-4">
+                            <label>Email</label>
+                            <input type="email" name="Email" id="Email" class="form-control" value="@Model.Email" placeholder="Email">
+                        </div>
+                        <div class="form-group mb-3 col-md-4">
+                            <label>Telefon</label>
+                            <input type="text" name="Phone" class="form-control" value="@Model.Phone" placeholder="Telefon Numarası" id="Phone">
+                        </div>
+                        <div class="form-group mb-3 col-md-4">
+                            <label>Şifre</label>
+                            <input type="password" name="Password" id="Password" class="form-control" placeholder="Şifre">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+
+                    </div>
+                    <div class="row">
+                        <div class="form-group mb-3 col-10">
+                        </div>
+                        <div class="col-2">
+                            <input type="button" onclick="addOrEditUser();" class="btn btn-primary btn-block" value="Kaydet">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts{
+    @*<script src="~/plugins/inputmask/jquery.inputmask.min.js"></script>*@
+    <script src="~/lib/inputmask/jquery.inputmask.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/view-resources/Users/AddOrEdit.min.js"></script>
+}

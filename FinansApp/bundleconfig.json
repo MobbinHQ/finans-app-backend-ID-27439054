@@ -1,0 +1,68 @@
+[
+  {
+    "outputFileName": "wwwroot/view-resources/Users/Index.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/Users/Index.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/Users/AddOrEdit.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/Users/AddOrEdit.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/NewsCategories/Index.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/NewsCategories/Index.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/NewsCategories/AddOrEdit.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/NewsCategories/AddOrEdit.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/News/Index.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/News/Index.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/News/AddOrEdit.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/News/AddOrEdit.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/Signals/Index.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/Signals/Index.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/Signals/AddOrEdit.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/Signals/AddOrEdit.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/StaticPages/Index.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/StaticPages/Index.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/StaticPages/AddOrEdit.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/StaticPages/AddOrEdit.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/SignalRequests/Index.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/SignalRequests/Index.js"
+    ]
+  }
+]

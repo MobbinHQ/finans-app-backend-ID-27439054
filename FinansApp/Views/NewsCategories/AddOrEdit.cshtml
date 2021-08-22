@@ -1,0 +1,87 @@
+﻿@model FinansApp.Business.NewsCategories.Dto.NewsCategoryAddOrEditDto;
+@{
+    ViewData["Title"] = "AddOrEdit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                @if (Model.Id == 0)
+                {
+                    <h1 class="m-0 text-dark">Haber Kategori Ekle</h1>
+                }
+                else
+                {
+                    <h1 class="m-0 text-dark">@Model.Name</h1>
+                }
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/urun-kategorileri">Listeye Dön</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content">
+    <div class="container">
+        <div class="card">
+            <div class="card-body card-primary">
+                <form role="form" id="AddOrEditForm">
+                    <input type="hidden" name="Id" value="@Model.Id" />
+                    <div class="row mb-3">
+                        <div class="form-group col-md-3">
+                            @if (Model.IsActive == true)
+                            {
+                                <input type="checkbox" id="isActive" name="IsActive" checked="checked" value="true" />
+                                <label for="isActive" class="accent-blue">Aktif mi?</label>
+                            }
+                            else
+                            {
+                                <input type="checkbox" id="isActive" name="IsActive" value="true" />
+                                <label for="isActive" class="accent-blue">Aktif mi?</label>
+                            }
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="form-group mb-3 col-md-4">
+                            <label>Ana Kategori</label>
+                            <select id="parentCategory" class="form-control" name="ParentCategoryId">
+                                <option value="">Ana Kategori Seçiniz..</option>
+                                @foreach (var item in Model.NewsCategories)
+                                {
+                                    @if (Model.ParentCategoryId == item.Id)
+                                    {
+                                        <option selected value="@item.Id">@item.Name</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@item.Id">@item.Name</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="form-group mb-3 col-md-8">
+                            <label>Kategori Adı</label>
+                            <input type="text" name="Name" id="Name" class="form-control" value="@Model.Name" placeholder="Kategori Adı">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group mb-3 col-10">
+                        </div>
+                        <div class="col-2">
+                            <input type="button" onclick="addProductCategory();" class="btn btn-primary btn-block" value="Kaydet">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/view-resources/NewsCategories/AddOrEdit.min.js"></script>
+}
